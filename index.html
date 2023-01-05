@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Intro p5.js</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  
+    <style type="text/css">
+    h3
+    {
+      font-size: 25px !important;
+      background-color: #fffea6;
+      border: #ff7ccd solid 2px;
+      border-radius: 75px;
+      color: #310229;
+      width: fit-content;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .heading{
+      background-color: #fffea6;
+      border: #ff7ccd solid 2px;
+      border-radius: 75px;
+      color: #310229;
+      width: fit-content;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    canvas {
+      border:4px solid #ff7ccd;
+    }
+    .button{
+      background-color: #fffea6;
+      border: #ff7ccd solid 2px;
+      border-radius: 75px;
+      color: #310229;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    body{
+      background-color: #fffea6;
+      text-align: center;
+      color: #310229;
+    }
+    html{
+      text-align: center;
+    }
+    #tint_input{
+      color: #ff7ccd;
+      background-color:#180e1600;
+      border-bottom: #ff7ccd 2px solid;
+      border-top: #310229;
+      border-left: #310229;
+      border-right: #310229;
+      font-size: 20px;
+    }
+    </style>
+  </head>
+  
+  <body>
+      <center>
+          <div class="container">
+              <h3 class="heading">Photo Frame</h3>
+              <br><br>
+              <label class="heading">Tint color</label> <b> - </b> 
+              <input placeholder="Tint color" id="tint_input">
+              <br><br>
+              <button onclick="apply_filter()" class="button">Apply filters</button>&nbsp;&nbsp;&nbsp;
+              <button onclick="take_snapshot()" class="button">Take Snapshot</button>
+          </div>
+      </center>
+  <script src="main.js"></script>
+  </body>
+  
+</html>
